@@ -1,0 +1,23 @@
+# Menu
+menu:
+  Home: /
+  Archives: /archives
+  Anime: /anime
+  About: /about
+
+# Bangumi Config
+bangumi:
+  enabled: true
+  user_id: 1164833
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Miscellaneous
+google_analytics:
+favicon: /img/favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
