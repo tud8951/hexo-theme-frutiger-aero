@@ -24,13 +24,13 @@
         </h1>
         <nav id="main-nav">
           
-            <a class="main-nav-link" href="/">Home</a>
+            <a class="main-nav-link" href="/">首页</a>
           
-            <a class="main-nav-link" href="/archives">Archives</a>
+            <a class="main-nav-link" href="/archives">归档</a>
           
-            <a class="main-nav-link" href="/anime">Anime</a>
+            <a class="main-nav-link" href="/anime">追番</a>
           
-            <a class="main-nav-link" href="/about">About</a>
+            <a class="main-nav-link" href="/about">关于</a>
           
         </nav>
       </div>
@@ -38,8 +38,8 @@
     <main id="main">
       <div class="anime-container">
   <header class="anime-header">
-    <h1>My Anime List</h1>
-    <p>My journey in the 2D world</p>
+    <h1>我的追番记录</h1>
+    <p>记录我的二次元之旅</p>
   </header>
 
   <div class="anime-stats" id="anime-stats">
@@ -47,47 +47,47 @@
       <div class="stat-icon">📚</div>
       <div class="stat-info">
         <span class="stat-value" id="stat-total">-</span>
-        <span class="stat-label">Total</span>
+        <span class="stat-label">总数</span>
       </div>
     </div>
     <div class="stat-card stat-watching">
       <div class="stat-icon">▶️</div>
       <div class="stat-info">
         <span class="stat-value" id="stat-watching">-</span>
-        <span class="stat-label">Watching</span>
+        <span class="stat-label">追番中</span>
       </div>
     </div>
     <div class="stat-card stat-completed">
       <div class="stat-icon">✅</div>
       <div class="stat-info">
         <span class="stat-value" id="stat-completed">-</span>
-        <span class="stat-label">Completed</span>
+        <span class="stat-label">已追完</span>
       </div>
     </div>
     <div class="stat-card stat-score">
       <div class="stat-icon">⭐</div>
       <div class="stat-info">
         <span class="stat-value" id="stat-score">-</span>
-        <span class="stat-label">Avg Score</span>
+        <span class="stat-label">平均评分</span>
       </div>
     </div>
   </div>
 
-  <h2 class="list-title">Anime List</h2>
+  <h2 class="list-title">追番列表</h2>
   <div class="anime-list" id="anime-list">
-    <div class="loading-status">Syncing Bangumi data...</div>
+    <div class="loading-status">正在同步 Bangumi 数据...</div>
   </div>
 </div>
 
 <script>
   const BANGUMI_USER_ID = '1164833';
   const TRANSLATIONS = {
-    error_id: 'Please set Bangumi User ID in theme config',
-    error_fetch: 'Failed to load Bangumi data. Check ID or network (CORS).',
-    status_1: 'Wish',
-    status_2: 'Collected',
-    status_3: 'Do',
-    status_other: 'On Hold'
+    error_id: '请在主题配置中设置 Bangumi 用户 ID',
+    error_fetch: '无法加载 Bangumi 数据，请检查 ID 或网络（可能存在跨域限制）。',
+    status_1: '想看',
+    status_2: '看过',
+    status_3: '在看',
+    status_other: '搁置'
   };
 
   if (!BANGUMI_USER_ID) {
