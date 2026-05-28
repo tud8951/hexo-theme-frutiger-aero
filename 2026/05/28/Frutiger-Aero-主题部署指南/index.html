@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Frutiger Aero 主题部署指南 | Frutiger Aero</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <link rel="icon" href="/hexo-theme-frutiger-aero/img/favicon.png">
+  
+  
+<link rel="stylesheet" href="/hexo-theme-frutiger-aero/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+  <div class="bubble bubble-1"></div>
+  <div class="bubble bubble-2"></div>
+  <div class="bubble bubble-3"></div>
+  <div id="container">
+    <header id="header">
+      <div class="header-inner">
+        <h1 id="logo-wrap">
+          <a href="/hexo-theme-frutiger-aero/" id="logo">Frutiger Aero</a>
+        </h1>
+        <nav id="main-nav">
+          
+            <a class="main-nav-link" href="/hexo-theme-frutiger-aero/">首页</a>
+          
+            <a class="main-nav-link" href="/hexo-theme-frutiger-aero/archives">归档</a>
+          
+            <a class="main-nav-link" href="/hexo-theme-frutiger-aero/anime">追番</a>
+          
+            <a class="main-nav-link" href="/hexo-theme-frutiger-aero/about">关于</a>
+          
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Frutiger Aero 主题部署指南</h1>
+    <div class="post-meta">
+      <time datetime="2026-05-28T12:30:00.000Z" itemprop="datePublished">
+  2026-05-28
+</time>
+
+    </div>
+  </header>
+  <div class="post-content">
+    <h1 id="欢迎使用-Frutiger-Aero-主题"><a href="#欢迎使用-Frutiger-Aero-主题" class="headerlink" title="欢迎使用 Frutiger Aero 主题"></a>欢迎使用 Frutiger Aero 主题</h1><p>本篇文章将指导你如何部署并配置这个充满 2000 年代设计美学的主题。Frutiger Aero 风格以透明感、玻璃拟态和亮丽的色彩著称，让你的博客瞬间充满怀旧而清新的气息。</p>
+<h2 id="1-安装与初始化"><a href="#1-安装与初始化" class="headerlink" title="1. 安装与初始化"></a>1. 安装与初始化</h2><p>首先，确保你已经安装了 Hexo 基础环境。</p>
+<ol>
+<li><strong>克隆主题</strong>：<br>将主题文件夹放置在 Hexo 项目的 <code>themes/</code> 目录下。</li>
+<li><strong>启用主题</strong>：<br>修改 Hexo 根目录下的 <code>_config.yml</code>：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">frutiger-aero</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="2-核心功能配置"><a href="#2-核心功能配置" class="headerlink" title="2. 核心功能配置"></a>2. 核心功能配置</h2><p>打开 <code>themes/frutiger-aero/_config.yml</code> 进行详细设置：</p>
+<h3 id="网站图标-Favicon"><a href="#网站图标-Favicon" class="headerlink" title="网站图标 (Favicon)"></a>网站图标 (Favicon)</h3><p>将你的图标文件放入 <code>source/img/</code> 目录下，并配置路径：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">favicon:</span> <span class="string">/img/favicon.jpg</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="追番页面-Anime"><a href="#追番页面-Anime" class="headerlink" title="追番页面 (Anime)"></a>追番页面 (Anime)</h3><p>本主题内置了 Bangumi API 接入。填入你的用户 ID 即可自动生成追番墙：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">bangumi:</span></span><br><span class="line">  <span class="attr">enabled:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">user_id:</span> <span class="string">你的ID</span>  <span class="comment"># 例如 1164833</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-视觉特色"><a href="#3-视觉特色" class="headerlink" title="3. 视觉特色"></a>3. 视觉特色</h2><ul>
+<li><strong>玻璃拟态 (Glassmorphism)</strong>：使用 <code>backdrop-filter</code> 实现，让卡片具有真实的半透明磨砂感。</li>
+<li><strong>动态气泡</strong>：背景中漂浮的 CSS 动画气泡，增加灵动感。</li>
+<li><strong>怀旧时间轴</strong>：归档页面采用了独特的时间轴设计，清晰展示创作历程。</li>
+</ul>
+<h2 id="4-部署上线"><a href="#4-部署上线" class="headerlink" title="4. 部署上线"></a>4. 部署上线</h2><p>推荐使用 GitHub Pages 配合 GitHub Actions 进行自动部署。</p>
+<ol>
+<li><strong>安装部署插件</strong>：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
+<li><strong>执行部署命令</strong>：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npx hexo clean</span><br><span class="line">npx hexo generate</span><br><span class="line">npx hexo deploy</span><br></pre></td></tr></table></figure></li>
+</ol>
+<hr>
+<p><em>“让互联网再次充满光泽与色彩。”</em><br>—— 祝你使用愉快！</p>
+
+  </div>
+  
+  <footer class="post-footer">
+    
+      <div class="post-tags">
+        
+          <a href="/hexo-theme-frutiger-aero/tags/Hexo/" class="post-tag">#Hexo</a>
+        
+          <a href="/hexo-theme-frutiger-aero/tags/%E6%95%99%E7%A8%8B/" class="post-tag">#教程</a>
+        
+          <a href="/hexo-theme-frutiger-aero/tags/Frutiger-Aero/" class="post-tag">#Frutiger Aero</a>
+        
+      </div>
+    
+
+    <nav class="post-nav">
+      
+      
+      
+        <a href="/hexo-theme-frutiger-aero/2026/05/28/hello-world/" class="post-nav-link next">
+          <div class="nav-info">
+            <span class="nav-label">下一篇</span>
+            <span class="nav-title">Hello World</span>
+          </div>
+          <span class="nav-arrow">&raquo;</span>
+        </a>
+      
+    </nav>
+  </footer>
+</article>
+
+    </main>
+    <footer id="footer">
+      <div class="footer-inner">
+        &copy; 2026 BigJackson<br>
+        Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Frutiger Aero Theme
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
