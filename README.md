@@ -4,7 +4,7 @@ English | [简体中文](./README_zh.md)
 
 A nostalgic Hexo theme inspired by the Frutiger Aero aesthetic (mid-2000s to early 2010s).
 
-![Preview](./screenshot.png)
+![Preview](./.png)
 
 ## Features
 - **Glossy Glassmorphism**: High-quality glass effects using `backdrop-filter`.
