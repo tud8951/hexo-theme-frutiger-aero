@@ -21,6 +21,12 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body::before {
@@ -605,6 +611,9 @@ article:hover {
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.3s ease;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .anime-card:hover {
@@ -685,6 +694,30 @@ article:hover {
   margin: 0;
 }
 
+.anime-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.anime-tag {
+  font-size: 10px;
+  padding: 2px 8px;
+  background: linear-gradient(135deg, rgba(0, 170, 255, 0.15) 0%, rgba(58, 123, 213, 0.15) 100%);
+  color: var(--primary-blue);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 170, 255, 0.25);
+  white-space: nowrap;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.anime-tag:hover {
+  background: linear-gradient(135deg, rgba(0, 170, 255, 0.25) 0%, rgba(58, 123, 213, 0.25) 100%);
+  transform: translateY(-1px);
+}
+
 .loading-status, .error-status {
   grid-column: 1 / -1;
   text-align: center;
@@ -695,4 +728,164 @@ article:hover {
 #footer a {
   color: var(--primary-blue);
   text-decoration: none;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  #container {
+    padding: 15px;
+  }
+
+  #header {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-nav-link {
+    margin-left: 0;
+  }
+
+  article {
+    padding: 20px;
+  }
+
+  .archive-article-title, .post-title {
+    font-size: 22px;
+  }
+
+  .post-content {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .post-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .post-nav-link {
+    padding: 12px 16px;
+  }
+
+  .post-nav-link.prev,
+  .post-nav-link.next {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .post-nav-link.next {
+    flex-direction: row-reverse;
+  }
+
+  .post-nav-link.next .nav-arrow {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .nav-title {
+    max-width: 100%;
+  }
+
+  .timeline-container {
+    margin-left: 10px;
+  }
+
+  .timeline-year-title {
+    font-size: 24px;
+  }
+
+  .timeline-post-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .about-section {
+    padding: 20px;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .anime-list {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+  }
+
+  .stat-card {
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bubble-1 { width: 60px; height: 60px; }
+  .bubble-2 { width: 80px; height: 80px; }
+  .bubble-3 { width: 50px; height: 50px; }
+
+  article {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .archive-article-title, .post-title {
+    font-size: 20px;
+  }
+
+  .post-content {
+    font-size: 15px;
+  }
+
+  .post-tag {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+
+  .post-nav-link {
+    padding: 10px 12px;
+    border-radius: 12px;
+  }
+
+  .nav-label {
+    font-size: 11px;
+  }
+
+  .nav-title {
+    font-size: 14px;
+  }
+
+  .timeline-year-title {
+    font-size: 22px;
+  }
+
+  .timeline-post-title {
+    font-size: 15px;
+  }
+
+  .about-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .anime-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .anime-tag {
+    font-size: 9px;
+    padding: 1px 6px;
+  }
 }
