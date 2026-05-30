@@ -16,6 +16,19 @@
   <div class="bubble bubble-1"></div>
   <div class="bubble bubble-2"></div>
   <div class="bubble bubble-3"></div>
+  
+  <!-- Music Player -->
+  <div class="music-player" id="musicPlayer">
+    <button type="button" class="cd-player" id="cdPlayer" onclick="togglePlay()" aria-label="播放 / 暂停">
+      <div class="cd-spinner" id="cdSpinner">
+        <div class="cd-center"></div>
+      </div>
+    </button>
+  </div>
+  <audio id="audioPlayer" autoplay loop preload="auto">
+    <source src="/music/WiiU-MiiMake.mp3" type="audio/mpeg">
+  </audio>
+  
   <div id="container">
     <header id="header">
       <div class="header-inner">
@@ -30,13 +43,17 @@
           
             <a class="main-nav-link" href="/anime">追番</a>
           
+            <a class="main-nav-link" href="/projects">项目</a>
+          
             <a class="main-nav-link" href="/about">关于</a>
           
         </nav>
       </div>
     </header>
     <main id="main">
-      <div class="timeline-container">
+      <div class="main-wrapper">
+        <div class="content-wrapper">
+          <div class="timeline-container">
   
   
     
@@ -46,7 +63,7 @@
         <div class="timeline-year-header">
           <span class="timeline-year-dot"></span>
           <a href="/archives/2026" class="timeline-year-title">2026</a>
-          <span class="timeline-year-count">3 篇文章</span>
+          <span class="timeline-year-count">2 篇文章</span>
         </div>
       </div>
     
@@ -54,19 +71,55 @@
     <div class="timeline-post-item">
       <div class="timeline-post-dot"></div>
       <div class="timeline-post-info">
-        <time class="timeline-post-date">05-28</time>
-        <a href="/2026/05/28/Frutiger-Aero-%E4%B8%BB%E9%A2%98%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97/" class="timeline-post-title">
+        <time class="timeline-post-date">05-31</time>
+        <a href="/2026/05/31/Frutiger-Aero-%E4%B8%BB%E9%A2%98%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97/" class="timeline-post-title">
           
           Frutiger Aero 主题部署指南
         </a>
         <div class="timeline-post-tags">
           
             
+              <span class="tag-item">#教程</span>
+            
               <span class="tag-item">#Hexo</span>
+            
+              <span class="tag-item">#Frutiger Aero</span>
+            
+          
+        </div>
+      </div>
+    </div>
+  
+    
+    
+      
+      <div class="timeline-year-item">
+        <div class="timeline-year-header">
+          <span class="timeline-year-dot"></span>
+          <a href="/archives/2025" class="timeline-year-title">2025</a>
+          <span class="timeline-year-count">1 篇文章</span>
+        </div>
+      </div>
+    
+    
+    <div class="timeline-post-item">
+      <div class="timeline-post-dot"></div>
+      <div class="timeline-post-info">
+        <time class="timeline-post-date">11-02</time>
+        <a href="/2025/11/02/2025-11-2/" class="timeline-post-title">
+          
+          各种图片API推荐
+        </a>
+        <div class="timeline-post-tags">
+          
             
               <span class="tag-item">#教程</span>
             
-              <span class="tag-item">#Frutiger Aero</span>
+              <span class="tag-item">#资源</span>
+            
+              <span class="tag-item">#科技</span>
+            
+              <span class="tag-item">#博客</span>
             
           
         </div>
@@ -77,6 +130,103 @@
 
 
 
+        </div>
+        <aside id="sidebar">
+          <div class="sidebar-card">
+            <div class="user-profile">
+              <div class="user-avatar-frame">
+                <div class="user-avatar">
+                  
+                    <img src="/img/favicon.png" alt="Frutiger Aero">
+                  
+                </div>
+              </div>
+              <h3 class="user-name">Frutiger Aero</h3>
+              
+                <p class="user-bio">Enjoy 2000s</p>
+              
+              
+                <div class="user-social">
+                  
+                    <a href="https://github.com/tud8951" target="_blank" class="social-link" title="GitHub">
+                      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                  
+                  
+                  
+                    <a href="https://www.youtube.com/@CNBigJackson" target="_blank" class="social-link" title="YouTube">
+                      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                    </a>
+                  
+                  
+                    <a href="https://t.me/CNBigJackson" target="_blank" class="social-link" title="Telegram">
+                      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    </a>
+                  
+                  
+                    <a href="mailto:tud8951@bigjackson.top" target="_blank" class="social-link" title="Email">
+                      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
+                  
+                </div>
+              
+            </div>
+          </div>
+          
+          
+            <div class="sidebar-card photo-frame-card">
+              <div class="photo-frame">
+                <div class="photo-inner">
+                  <img src="/img/asadal.jpg" alt="Photo">
+                </div>
+              </div>
+            </div>
+          
+          
+          <div class="sidebar-card stats-card">
+            <h4 class="sidebar-title">站点统计</h4>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-number">3</span>
+                <span class="stat-label">文章</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">2</span>
+                <span class="stat-label">分类</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">8</span>
+                <span class="stat-label">标签</span>
+              </div>
+            </div>
+          </div>
+          
+          
+            <div class="sidebar-card tags-card">
+              <h4 class="sidebar-title">热门标签</h4>
+              <div class="tags-cloud">
+                
+                  <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-cloud-item">教程</a>
+                
+                  <a href="/tags/%E8%B5%84%E6%BA%90/" class="tag-cloud-item">资源</a>
+                
+                  <a href="/tags/%E7%A7%91%E6%8A%80/" class="tag-cloud-item">科技</a>
+                
+                  <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-cloud-item">博客</a>
+                
+                  <a href="/tags/Aesthetic/" class="tag-cloud-item">Aesthetic</a>
+                
+                  <a href="/tags/Design/" class="tag-cloud-item">Design</a>
+                
+                  <a href="/tags/Hexo/" class="tag-cloud-item">Hexo</a>
+                
+                  <a href="/tags/Frutiger-Aero/" class="tag-cloud-item">Frutiger Aero</a>
+                
+              </div>
+            </div>
+          
+        </aside>
+      </div>
     </main>
     <footer id="footer">
       <div class="footer-inner">
@@ -85,5 +235,40 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    // Simple Music Player
+    const audioPlayer = document.getElementById('audioPlayer');
+    const cdSpinner = document.getElementById('cdSpinner');
+
+    function updateCdState() {
+      if (audioPlayer.paused) {
+        cdSpinner.classList.remove('playing');
+      } else {
+        cdSpinner.classList.add('playing');
+      }
+    }
+
+    // Toggle play/pause
+    function togglePlay() {
+      if (audioPlayer.paused) {
+        audioPlayer.play().then(updateCdState).catch(() => {
+          // ignore autoplay policy errors
+        });
+      } else {
+        audioPlayer.pause();
+        updateCdState();
+      }
+    }
+
+    audioPlayer.addEventListener('play', updateCdState);
+    audioPlayer.addEventListener('pause', updateCdState);
+
+    window.addEventListener('load', () => {
+      audioPlayer.play().catch(() => {
+        // 浏览器可能因自动播放策略阻止，仍会在用户首次交互后可播放
+      });
+    });
+  </script>
 </body>
 </html>
