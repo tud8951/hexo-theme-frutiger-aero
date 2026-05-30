@@ -6,6 +6,19 @@ menu:
   Projects: /projects
   About: /about
 
+# Sidebar Config
+sidebar:
+  enabled: true
+  username: Frutiger Aero  # 显示的用户名
+  avatar: /img/favicon.png  # 用户头像路径
+  description: Enjoy 2000s  # 用户简介
+  photo_frame: /img/asadal.jpg  # 相框图片路径
+
+# Social Links
+social:
+  github:   # GitHub 用户名
+  twitter:  # Twitter 用户名（可选）
+
 # Bangumi Config
 bangumi:
   enabled: true
@@ -26,7 +39,6 @@ projects:
     stars: 
     forks: 
     updated: 
-
 
 # Content
 excerpt_link: Read More
