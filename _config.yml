@@ -18,6 +18,9 @@ sidebar:
 social:
   github:   # GitHub 用户名
   twitter:  # Twitter 用户名（可选）
+  youtube:   # YouTube 用户名（可选）
+  telegram:   # Telegram 用户名（可选）
+  email:   # Email 地址（可选）
 
 # Bangumi Config
 bangumi:
