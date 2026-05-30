@@ -25,7 +25,7 @@ social:
 # Bangumi Config
 bangumi:
   enabled: true
-  user_id: 
+  user_id: 1164833
 
 # Projects Config
 # 方式1: 从 GitHub API 自动获取（可能遇到速率限制）
