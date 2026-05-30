@@ -3,12 +3,30 @@ menu:
   Home: /
   Archives: /archives
   Anime: /anime
+  Projects: /projects
   About: /about
 
 # Bangumi Config
 bangumi:
   enabled: true
-  user_id: 1164833
+  user_id: 
+
+# Projects Config
+# 方式1: 从 GitHub API 自动获取（可能遇到速率限制）
+# github:
+#   username: tud8951
+#   repos: []
+
+# 方式2: 手动配置项目（推荐，不依赖 API）
+projects:
+  - name: 
+    description: 
+    url: 
+    language: 
+    stars: 
+    forks: 
+    updated: 
+
 
 # Content
 excerpt_link: Read More

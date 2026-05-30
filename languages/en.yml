@@ -2,7 +2,17 @@ menu:
   Home: Home
   Archives: Archives
   Anime: Anime
+  Projects: Projects
   About: About
+
+projects:
+  title: My Projects
+  subtitle: Some open source projects and works
+  loading: Loading project info...
+  error_fetch: Failed to load project data, check network or config
+  stars: Stars
+  forks: Forks
+  updated: Updated
 
 anime:
   title: My Anime List
